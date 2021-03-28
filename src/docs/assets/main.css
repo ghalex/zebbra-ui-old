@@ -1,0 +1,8 @@
+@import '../../lib/themes/main/index.css';
+@import './tailwind.css';
+
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+@tailwind utilities;

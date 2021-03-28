@@ -1,0 +1,47 @@
+.z-radio {
+  --border-color: var(--main-color);
+  --bg-color: var(--main-color-light);
+  --icon: url('data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJjaXJjbGUiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iIzRhNTU2OCIgZD0iTTI1NiA4QzExOSA4IDggMTE5IDggMjU2czExMSAyNDggMjQ4IDI0OCAyNDgtMTExIDI0OC0yNDhTMzkzIDggMjU2IDh6IiBjbGFzcz0iIj48L3BhdGg+PC9zdmc+');
+
+  appearance: none;
+  border: 2px var(--border-color) solid;
+  border-radius: 999px;
+  outline: none;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  margin-right: 5px;
+}
+
+.z-radio:checked,
+.z-radio[aria-checked='true'] {
+  fill: red;
+  background: var(--icon);
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+  background-size: 14px 14px;
+}
+
+.z-radio.primary {
+  --bg-color: var(--primary-color-light);
+  --border-color: var(--primary-color);
+  --icon: url('data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJjaXJjbGUiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iIzZiNDZjMSIgZD0iTTI1NiA4QzExOSA4IDggMTE5IDggMjU2czExMSAyNDggMjQ4IDI0OCAyNDgtMTExIDI0OC0yNDhTMzkzIDggMjU2IDh6IiBjbGFzcz0iIj48L3BhdGg+PC9zdmc+');
+}
+
+.z-radio.danger {
+  --bg-color: var(--damger-color-light);
+  --border-color: var(--danger-color);
+  --icon: url('data:image/svg+xml;base64,PHN2ZyBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgZGF0YS1wcmVmaXg9ImZhcyIgZGF0YS1pY29uPSJjaXJjbGUiIHJvbGU9ImltZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHBhdGggZmlsbD0iI2M1MzAzMCIgZD0iTTI1NiA4QzExOSA4IDggMTE5IDggMjU2czExMSAyNDggMjQ4IDI0OCAyNDgtMTExIDI0OC0yNDhTMzkzIDggMjU2IDh6IiBjbGFzcz0iIj48L3BhdGg+PC9zdmc+');
+}
+
+.z-radio.small {
+  width: 18px;
+  height: 18px;
+
+  &:checked,
+  &[aria-checked='true'] {
+    background-position: 2px 2px;
+    background-size: 10px 10px;
+  }
+}

@@ -1,0 +1,20 @@
+@import './button.css';
+@import './checkbox.css';
+@import './radio.css';
+@import './dialog.css';
+@import './menu.css';
+
+:root {
+  --main-color: #4a5568;
+  --primary-color: #6b46c1;
+  --success-color: #2f855a;
+  --danger-color: #c53030;
+
+  --main-color-light: #6b7280;
+  --primary-color-light: #b794f4;
+  --success-color-light: #68d391;
+  --danger-color-light: #fc8181;
+
+  --box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  --border-radius: 8px;
+}
